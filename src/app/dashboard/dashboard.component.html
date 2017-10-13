@@ -1,0 +1,84 @@
+<div class="contentMain">
+	<app-header></app-header>
+	<div class="container">
+		<section class='boxContent'>
+			<h2 class='title'>Bienvenidos a <span class='textGreen'>GES<span class='textBlue'>MEDIC</span></span></h2>
+			<div class="contentDetail">
+				<div class="row">
+					<div class="column">
+						<div class="columnBox">
+							<p>Mujeres: {{ valueMas}}</p>
+							<p class='textGreen textBig'>{{ porcMas}}%</p>
+						</div>
+						<div class="columnBox">
+							<div class="circuleProgress">
+								<div class="boxIcon">
+									<i class="fa fa-mars" aria-hidden="true"></i>
+								</div>
+								<canvas width="70" height="70" id="boxProgress"></canvas>
+								<canvas width="70" height="70" id="boxProgressColor"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="columnBox">
+							<p>Mujeres: {{ valueFem}}</p>
+							<p class='textGreen textBig'>{{ porcFem}}%</p>
+						</div>
+						<div class="columnBox">
+							<div class="circuleProgress">
+								<div class="boxIcon">
+									<i class="fa fa-venus" aria-hidden="true"></i>
+								</div>
+								<canvas width="70" height="70" id="boxProgressVenus"></canvas>
+								<canvas width="70" height="70" id="boxProgressColorVenus"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row rowtop">
+					<div class="column">
+						<div class="boxData">
+							<div class="dataColumn">
+								<i class="fa fa-users" aria-hidden="true"></i>
+							</div>
+							<div class="dataColumn">
+								<p>Total de Pacientes:</p>
+								<p class='textGreen textBig'>{{ totalpeople }}</p>
+							</div>
+						</div>
+						<div class="boxData">
+							<div class="dataColumn">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+							</div>
+							<div class="dataColumn">
+								<p>Total de Empresas:</p>
+								<p class='textGreen textBig'>{{ totalbusssines }}</p>
+							</div>
+						</div>
+					</div>
+					<div class="column separate">
+						<div class="boxData">
+							<div class="dataColumn">
+								<i class="fa fa-stethoscope" aria-hidden="true"></i>
+							</div>
+							<div class="dataColumn">
+								<p>Total de Consultas:</p>
+								<p class='textGreen textBig'>{{ totalconsultations }}</p>
+							</div>
+						</div>
+						<div class="boxData">
+							<div class="dataColumn">
+								<i class="fa fa-calendar-o" aria-hidden="true"></i>
+							</div>
+							<div class="dataColumn">
+								<p>Historias Clinicias:</p>
+								<p class='textGreen textBig'>{{ totalhistory }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>	
+	</div>
+</div>

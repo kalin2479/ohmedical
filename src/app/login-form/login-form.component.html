@@ -1,0 +1,31 @@
+<div class="pageLogin">
+  	<header class='headerLogin'>
+		<a href="javascript:void(0)">
+			<img src="./assets/images/logo.png" alt="">
+		</a>
+	</header>
+	<div class="boxLogin">
+		<div class="formLogin">	
+			<h1>
+				Bienvenidos a <span class='textGreen'>GES</span><span>MEDIC</span>
+			</h1>
+			<form (submit)="loginUser($event)">
+				<div class="rowForm rowColumn">
+					<label for="user">
+						<i class="fa fa-user-o" aria-hidden="true"></i>
+					</label>
+					<input type="text" name='user' placeholder='Nombre de usuario'/>
+				</div>
+				<div class="rowForm rowColumn">
+					<label for="password">
+						<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+					</label>
+					<input type="password" name='password' placeholder='Clave' />
+				</div>
+				<div class="rowForm">
+					<button type='submit'>Continuar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
