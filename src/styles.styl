@@ -2,28 +2,18 @@
 Se agrega los estilos de manera global
 */
 
-@import 'nib'
-@import 'nib/gradients'
+@import '../node_modules/nib/'
+@import '../node_modules/nib/lib/nib/gradients.styl'
 
 @import 'fonts.css'
+
+
 global-reset()
 
 normalize-base()
 normalize-html5()
-body
-	color #888888
-.textGreen
-	color #00ad5e
-.textBlue
-	color #0157ac
-.container
-	width 90%
-	margin auto
-	@media screen and (min-width:480px)
-		width 90%
-	@media screen and (min-width:750px)
-		width 700px
-	@media screen and (min-width:992px)
-		width 961px
-	@media screen and (min-width:1200px)
-		width 1190px
+
+@import 'assets/stylus/header'
+@import 'assets/stylus/login'
+@import 'assets/stylus/home'
+

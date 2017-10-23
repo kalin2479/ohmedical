@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "ohmedical"
+    "name": "ohmedical",
+    "ejected": true
   },
   "apps": [
     {
@@ -19,7 +20,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.styl"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js"
@@ -56,7 +57,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "styl",
+    "component": {
+    }
   }
 }

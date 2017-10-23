@@ -13,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 Habilito las rutas, para ello llamo al modulo Routes
 */
 import { RouterModule, Routes } from '@angular/router';
+import { TesteComponent } from './teste/teste.component';
+import { PatientComponent } from './patient/patient.component';
 
 const appRoutes : Routes = [
   {
@@ -20,11 +22,19 @@ const appRoutes : Routes = [
     component : LoginFormComponent
   },
   {
+    path : 'login',
+    component : LoginFormComponent    
+  },
+  {
     path : 'dashboard',
     canActivate : [AuthguardGuard],
     component : DashboardComponent    
   },
-
+  {
+    path : 'patient',
+    canActivate : [AuthguardGuard],
+    component : PatientComponent    
+  },
   // De cualquier otra forma que no se haya establecido la regla ira al login
   {
     path : '**',
@@ -37,7 +47,9 @@ const appRoutes : Routes = [
     AppComponent,
     HeaderComponent,
     LoginFormComponent,
-    DashboardComponent
+    DashboardComponent,
+    TesteComponent,
+    PatientComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

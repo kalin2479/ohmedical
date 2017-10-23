@@ -1,0 +1,178 @@
+body
+	color #888888
+
+p
+	font-size 12px
+	font-family 'colaborate-regularregular'
+	line-height 1.25em
+.textGreen
+	color #00ad5e
+.textBlue
+	color #0157ac
+
+// Estilos para el tema estadisticos
+
+.circuleProgress
+	height 70px
+	width 70px
+	position relative
+	top -20px
+	.boxIcon
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-40%,-40%)
+		i
+			color #dedede
+			font-size 26px
+	canvas
+		position absolute
+		top 0
+		left 0
+
+// Estilos para la parte del contenido una vez que nos hemos logueado
+
+.contentMain
+	background-image url('../src/assets/images/fondologin.jpg')
+	background-repeat no-repeat
+	background-position 0
+	background-size cover
+	height 700px
+	.boxContent
+		margin-top -40px
+		background white
+		border-radius 10px
+		padding 80px 60px 60px 30px
+		.contentDetail
+			padding 50px 0px 10px 20px
+			display flex
+			flex-direction row
+			flex-wrap nowrap
+			justify-content space-between
+			align-items flex-start
+			.rowtop
+				position relative
+				top -16px
+			.column
+				display inline-block
+				vertical-align top
+				&:last-child
+					margin-left 30px
+				&.separate
+					&:last-child
+						margin-left 5px
+				.boxData
+					width 200px
+					height 70px
+					border 1px solid #cccccc
+					border-radius 10px
+					box-sizing border-box
+					margin-bottom 10px
+					.dataColumn
+						display inline-block
+						vertical-align top
+						margin-right -4px
+						position relative
+						top 0
+						left 0
+						height 100%
+						&:last-child
+							padding 12px 0 0px 10px
+						&:first-child
+							width 61px
+							border-right 1px dashed #ccc
+							i
+								position absolute
+								top 50%
+								left 50%
+								transform translate(-50%,-50%)
+								font-size 30px
+								color #ccc
+				p
+					
+					font-size 14px
+					font-family 'colaborate-regularregular'
+					letter-spacing -0.08em
+					margin 0
+					line-height 0.85em
+					&.textBig
+						font-family 'colaboratelightregular'
+						font-size 45px
+				.columnBox
+					display inline-block
+					vertical-align top
+					margin-right 4px
+		h2
+			&.title
+				font-size 30px
+				font-family 'colaboratelightregular'
+
+//Estilos generales para filas y columnas
+.styleRow
+	background #f1f1f1
+	padding 21px 15px 14px 12px
+	border-radius 10px
+.row
+	display flex
+	flex-direction row
+	flex-wrap nowrap
+	justify-content flex-start
+	align-content flex-start
+	&.space_between
+		justify-content space-between
+	.column
+		margin-right 6px
+		&:last-child
+			margin-right 0
+.separateTop
+	margin-top 6px
+input[type="text"]
+	border 1px solid #cccccc
+	border-radius 10px
+	padding-left 10px
+	color #8b8b8b
+	height 33px
+	&:focus
+		outline 0px
+.sangriaLeft
+	margin-left 10px
+.ancho170
+	width 170px
+button
+	width 160px
+	height 31px
+	border-radius 20px
+	border 0
+	font-family 'colaboratelightregular'
+	font-size 14px
+	color white
+	background linear-gradient(to bottom, #4fbd0e 0%,#009a00 100%)
+	cursor pointer
+	//transition .5s all ease
+	&:focus
+		outline 0px
+	&:hover
+		background linear-gradient(to bottom, #0474e3 0%,#0057ae 100%)
+.ancho1
+	flex-grow 1
+.ancho2
+	flex-grow 2
+.padding_right
+	padding-right 30px
+.paddingTB
+	padding-top 10px 
+	padding-bottom 5px		
+.borderBottom
+	padding-bottom 10px
+	border-bottom 1px dashed #bebfc1  
+.container
+	width 90%
+	margin auto
+	@media screen and (min-width:480px)
+		width 90%
+	@media screen and (min-width:750px)
+		width 700px
+	@media screen and (min-width:992px)
+		width 961px
+	@media screen and (min-width:1200px)
+		width 1190px

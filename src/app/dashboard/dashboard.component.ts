@@ -13,22 +13,22 @@ declare var $:any;
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.styl']
 })
 export class DashboardComponent implements OnInit {
-	private min = 0;
-  	private max = 500;
-  	private valueMas = 0;
-  	private valueFem = 0;
-  	private totalpeople = 0;
-  	private porcMas = 0;
-  	private porcFem = 0;
-  	private ratioMas = 0;
-  	private ratioFem = 0;
+	public min = 0;
+	public max = 500;
+  	public valueMas = 0;
+  	public valueFem = 0;
+  	public totalpeople = 0;
+  	public porcMas = 0;
+  	public porcFem = 0;
+  	public ratioMas = 0;
+  	public ratioFem = 0;
 
-  	private totalconsultations = 0;
-  	private totalbusssines = 0;
-  	private totalhistory = 0;
+  	public totalconsultations = 0;
+  	public totalbusssines = 0;
+  	public totalhistory = 0;
   	constructor(private user : UserService) {
   		console.log('primero');
   	}

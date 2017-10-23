@@ -10,6 +10,9 @@
 				Bienvenidos a <span class='textGreen'>GES</span><span>MEDIC</span>
 			</h1>
 			<form (submit)="loginUser($event)">
+				<div class="rowForm alertBox" id="alertBox">
+					<p><span>{{ tipomsje }}</span> {{ msjeform }}</p>
+				</div>
 				<div class="rowForm rowColumn">
 					<label for="user">
 						<i class="fa fa-user-o" aria-hidden="true"></i>
