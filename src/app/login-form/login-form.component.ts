@@ -40,7 +40,8 @@ export class LoginFormComponent implements OnInit {
 	public loginUser(e){
 		e.preventDefault(); //Cancela el evento si este es cancelable, sin detener el resto del funcionamiento del evento, es decir, puede ser llamado de nuevo
 		//console.log(e.target);
-		let dataForm = e.target.elements; 
+		let dataForm = e.target.elements;
+		
 		let username = dataForm[0].value;
 		let password = dataForm[1].value;
 		let dataUser;	

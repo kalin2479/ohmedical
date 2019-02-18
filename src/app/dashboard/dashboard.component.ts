@@ -3,7 +3,7 @@ import { UserService } from '../services/user.service';
 
 /*
 	Declaramos la variable JQuery es que vamos a querer utilizarlo
-	en vez del dolar sino declaramos el dolar. 
+	en vez del dolar sino declaramos el dolar.
 	He indicamos que es de tipo any , para indicar que no me fuerce a que
 	sea de un tpo en especifico sino por el contrario puede ser cualquier cosa.
 */
@@ -35,9 +35,9 @@ export class DashboardComponent implements OnInit {
 
   	ngOnInit() {
   		console.log('segundo');
-  		
-  		this.valueMas = 352;
-  		this.valueFem = 148;
+
+  		this.valueMas = 10;
+  		this.valueFem = 490;
   		this.totalpeople = this.valueMas + this.valueFem;
   		this.totalconsultations = 300;
   		this.totalbusssines = 40;
@@ -80,6 +80,6 @@ export class DashboardComponent implements OnInit {
 		ctxColor.stroke();
   	}
 
-	
+
 
 }
